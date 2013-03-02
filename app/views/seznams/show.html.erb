@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Ime:</b>
+  <%= @seznam.ime %>
+</p>
+
+<p>
+  <b>Priimek:</b>
+  <%= @seznam.priimek %>
+</p>
+
+<p>
+  <b>Stevilka:</b>
+  <%= @seznam.stevilka %>
+</p>
+
+<p>
+  <b>Slika:</b>
+  <img src="<%= @seznam.slika %>" class="profilna_slika">
+</p>
+
+
+<%= link_to 'Spremeni', edit_seznam_path(@seznam) %> |
+<%= link_to 'Nazaj', seznams_path %>

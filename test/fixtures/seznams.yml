@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ime: MyString
+  priimek: MyString
+  stevilka: 1
+  slika: MyString
+
+two:
+  ime: MyString
+  priimek: MyString
+  stevilka: 1
+  slika: MyString

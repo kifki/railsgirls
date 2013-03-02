@@ -1,0 +1,33 @@
+<%= form_for(@seznam) do |f| %>
+  <% if @seznam.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@seznam.errors.count, "error") %> prohibited this seznam from being saved:</h2>
+
+      <ul>
+      <% @seznam.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ime %><br />
+    <%= f.text_field :ime %>
+  </div>
+  <div class="field">
+    <%= f.label :priimek %><br />
+    <%= f.text_field :priimek %>
+  </div>
+  <div class="field">
+    <label for="stevilka" value="številka" >Številka<br />
+    <%= f.number_field :stevilka %>
+  </div>
+  <div class="field">
+    <%= f.label :slika %><br />
+    <%= f.text_field :slika %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
